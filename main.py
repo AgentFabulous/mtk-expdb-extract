@@ -38,7 +38,8 @@ def main():
             dump['pl_lk'].append(line)
         if reading_linux:
             dump['linux'].append(line)
-    shutil.rmtree('out')
+    if os.path.isdir('out'):
+        shutil.rmtree('out')
     os.mkdir('out')
     for i in range(len(dumps)):
         ddir = 'out/' + str(i+1)
