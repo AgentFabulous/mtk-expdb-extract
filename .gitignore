@@ -1,4 +1,3 @@
-.idea/
 expdb
-out/
-venv/
+expdb.bin
+out
